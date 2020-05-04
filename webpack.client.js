@@ -1,6 +1,8 @@
 const path = require('path');
+const mode = process.env.NODE_ENV || 'development';
 
 module.exports = {
+    mode: mode,
     target: 'node',
     entry: './src/client.js',
     output: {
