@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "webpack:server": "webpack --config webpack.server.js --watch"
+  },
   "dependencies": {
+    "@babel/polyfill": "^7.8.7",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "react": "^16.13.1",
@@ -13,12 +17,8 @@
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.6",
-    "@babel/polyfill": "^7.8.7",
     "@babel/preset-env": "^7.9.6",
-    "@babel/preset-es2015": "^7.0.0-beta.53",
-    "@babel/preset-es2017": "^7.0.0-beta.53",
     "@babel/preset-react": "^7.9.4",
-    "@babel/preset-stage-0": "^7.8.3",
     "babel-loader": "^8.1.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
