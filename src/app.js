@@ -4,10 +4,13 @@ import HomePage from './pages/homePage';
 
 const App = () => {
     return (
+        // <Switch>
+        //     <Route path='/' render={props => (
+        //         <Homepage {...props} />
+        //     )} />
+        // </Switch>
         <Switch>
-            <Route path='/' render={props => (
-                <Homepage {...props} />
-            )} />
+            <Route path='/' component={HomePage} />
         </Switch>
     )
 }
