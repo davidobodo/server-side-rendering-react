@@ -11,8 +11,25 @@ const PORT = process.env.PORT || 3000;
 
 app.get('*', (req, res) => {
 
+    const context = {};
 
-    res.send('Thid is my appp')
+    const content = ReactDOMServer.renderToString(
+        <StaticRouter location={req.url} context={context}>
+            <App />
+        </StaticRouter>
+    );
+
+    const html = `
+        <html>
+            <head>
+            </head>
+            <body>
+                <div id='root'>${content}</div>
+            </body>
+        </html>
+    `
+
+    res.send(html)
 })
 app.listen(PORT, () => {
     console.log(`App running ${PORT}`)
