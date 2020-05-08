@@ -12,3 +12,10 @@ compile for usage in "value" specific environment
 e.g
     target: "node"
     Compile for usage in node environment
+
+### babel-polyfills
+Make you capable of using extra stuffs(new built-ins) like promise, weakmaps e.t.c
+
+
+#### Extra Notes
+-JSON.parse changes json to object while JSON.stringify does the opposite
