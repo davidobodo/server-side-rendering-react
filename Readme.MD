@@ -18,4 +18,4 @@ Make you capable of using extra stuffs(new built-ins) like promise, weakmaps e.t
 
 
 #### Extra Notes
--JSON.parse changes json to object while JSON.stringify does the opposite
+- JSON.parse changes json to object while JSON.stringify does the opposite
